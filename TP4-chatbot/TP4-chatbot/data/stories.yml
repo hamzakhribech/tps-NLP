@@ -1,0 +1,88 @@
+version: "3.0"
+
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Greet and Order Food
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: order_food
+  - action: action_order_food
+
+- story: Goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Affirmation and Denial
+  steps:
+  - intent: affirm
+  - action: action_affirm
+  - intent: deny
+  - action: action_deny
+
+- story: Mood Feedback
+  steps:
+  - intent: mood_great
+  - action: utter_mood_great
+  - intent: ask_feedback
+  - action: action_ask_feedback
+
+- story: Bot Challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- story: Ask Price and Menu
+  steps:
+  - intent: ask_price
+  - action: action_provide_price
+  - intent: ask_menu
+  - action: action_show_menu
+
+- story: Opening Hours and Location
+  steps:
+  - intent: ask_opening_hours
+  - action: action_provide_opening_hours
+  - intent: ask_location
+  - action: action_provide_location
+
+- story: Delivery Options and Payment Methods
+  steps:
+  - intent: ask_delivery_options
+  - action: action_provide_delivery_options
+  - intent: ask_payment_methods
+  - action: action_provide_payment_methods
+
+- story: Recommendations and Promotions
+  steps:
+  - intent: ask_recommendation
+  - action: action_provide_recommendation
+  - intent: ask_promotions
+  - action: action_provide_promotions

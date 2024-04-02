@@ -1,0 +1,432 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: order_food
+  examples: |
+    - I'd like to order a [pizza](dish)
+    - Can I get a [burger](dish) with fries?
+    - I want to order [sushi](dish) for delivery
+    - Order me some [pasta](dish) please
+
+- intent: ask_price
+  examples: |
+    - How much does the [pizza](dish) cost?
+    - What's the price of the [burger](dish)?
+    - Can you tell me the cost of the [sushi](dish)?
+    - How expensive is the [pasta](dish)?
+
+- intent: ask_menu
+  examples: |
+    - What's on the menu?
+    - Can you show me the menu?
+    - I'd like to see the menu
+    - Show me the food options
+
+- intent: ask_opening_hours
+  examples: |
+    - When are you open?
+    - What are your opening hours?
+    - What time do you close?
+    - Are you open today?
+
+- intent: ask_delivery_options
+  examples: |
+    - Do you offer delivery?
+    - Can you deliver to my address?
+    - How does delivery work?
+    - What are the delivery charges?
+
+- intent: ask_promotions
+  examples: |
+    - Do you have any promotions?
+    - Are there any discounts available?
+    - Can I get a coupon code?
+    - Are there any special offers?
+    - intent: ask_recommendation
+    - What do you recommend?
+    - Can you suggest something?
+    - Any recommendations for me?
+    - What's your best dish?
+
+- intent: ask_help
+  examples: |
+    - I need assistance
+    - Can you help me?
+    - I'm confused, can you assist?
+    - Help please!
+
+- intent: ask_feedback
+  examples: |
+    - How can I provide feedback?
+    - Do you accept feedback?
+    - I have some feedback for you
+    - Can I give you some feedback?
+
+- intent: ask_compliment
+  examples: |
+    - You're doing great!
+    - I'm impressed with your service
+    - Excellent job!
+    - Kudos to you!
+
+- intent: ask_complaint
+  examples: |
+    - I have a complaint
+    - Can I complain about something?
+    - I'm not happy with your service
+    - This needs improvement
+- intent: ask_location
+  examples: |
+    - Where are you located?
+    - What's your address?
+    - Can you tell me where you're based?
+    - How do I find you?
+
+- intent: ask_contact_info
+  examples: |
+    - Can I have your phone number?
+    - What's your contact information?
+    - How can I reach you?
+    - Do you have an email address?
+
+- intent: ask_special_diet
+  examples: |
+    - Do you have options for vegetarians?
+    - Can you accommodate gluten-free diets?
+    - What about vegan options?
+    - Do you offer halal food?
+
+- intent: ask_payment_methods
+  examples: |
+    - What payment methods do you accept?
+    - Can I pay with credit card?
+    - Do you accept cash?
+    - Are online payments available?
+
+- intent: ask_wait_time
+  examples: |
+    - How long is the wait time?
+    - What's the estimated wait time?
+    - Do I need to wait long for my order?
+    - Can you tell me how busy you are?
+
+- intent: ask_about
+  examples: |
+    - Can you tell me about your services?
+    - What can I expect from your restaurant?
+    - Tell me more about your offerings.
+    - What makes you different from others?
+- intent: ask_reservation_status
+  examples: |
+    - Can you check my reservation status?
+    - Is my reservation confirmed?
+    - Has my table been reserved?
+    - Can I verify my booking status?
+
+- intent: ask_feedback_policy
+  examples: |
+    - How do you handle feedback?
+    - What's your feedback policy?
+    - Do you take customer suggestions seriously?
+    - Can I provide feedback anonymously?
+
+- intent: ask_delivery_time
+  examples: |
+    - How long does delivery take?
+    - What's the estimated delivery time?
+    - Can I track my delivery?
+    - Do you provide updates on delivery status?
+
+- intent: ask_allergens
+  examples: |
+    - Do your dishes contain allergens?
+    - Are allergen information available?
+    - Can I get information on allergens?
+    - Are there any common allergens in your food?
+
+- intent: ask_reservation_cancelation
+  examples: |
+    - How can I cancel my reservation?
+    - Is there a fee for canceling my reservation?
+    - Can I cancel my booking online?
+    - What's your reservation cancellation policy?
+
+- intent: ask_cuisine_origin
+  examples: |
+    - Where does your cuisine originate from?
+    - What's the culinary inspiration behind your dishes?
+    - Can you tell me about the cultural influences on your food?
+    - What region do your recipes come from?
+- intent: ask_working_hours
+  examples: |
+    - What are your working hours?
+    - When do you open and close?
+    - Can you tell me your operating hours?
+    - What time do you start serving?
+
+- intent: ask_recommendation_best_seller
+  examples: |
+    - What's your best-selling dish?
+    - Can you recommend your most popular item?
+    - What do most people order here?
+    - What's the chef's specialty?
+
+- intent: ask_reservation_confirmation
+  examples: |
+    - Can I get a confirmation for my reservation?
+    - Do I need a confirmation email for my booking?
+    - How do I confirm my reservation?
+    - Can you send me a confirmation message?
+
+- intent: ask_delivery_area
+  examples: |
+    - What areas do you deliver to?
+    - Is delivery available in my area?
+    - Can you deliver to my location?
+    - Do you cover my neighborhood for delivery?
+
+- intent: ask_payment_security
+  examples: |
+    - Is my payment information secure?
+    - How do you protect my payment details?
+    - Can I trust your payment system?
+    - What security measures do you have for payments?
+
+- intent: ask_recommendation_seasonal
+  examples: |
+    - Do you have any seasonal recommendations?
+    - What's good to try this season?
+    - Any specials for this time of the year?
+    - Can you recommend something based on the current season?
+- intent: ask_order_tracking
+  examples: |
+    - Can I track my order?
+    - Is there a way to check the status of my order?
+    - How can I monitor the progress of my delivery?
+    - Do you provide order tracking information?
+
+- intent: ask_waitlist
+  examples: |
+    - Do you have a waitlist for reservations?
+    - How does the waitlist work?
+    - Can I join the waitlist for a table?
+    - Is there a waitlist option if there are no available reservations?
+
+- intent: ask_recommendation_spicy
+  examples: |
+    - Can you recommend something spicy?
+    - What's your spiciest dish?
+    - Do you have any spicy recommendations?
+    - I like spicy food, what would you suggest?
+
+- intent: ask_reservation_modification
+  examples: |
+    - How can I modify my reservation?
+    - Can I change the time of my booking?
+    - Is it possible to edit my reservation details?
+    - Do you allow modifications to reservations?
+
+- intent: ask_dietary_restrictions
+  examples: |
+    - Do you cater to dietary restrictions?
+    - What options do you have for people with dietary restrictions?
+    - Can you accommodate specific diets like vegan or gluten-free?
+    - Are there dishes suitable for people with dietary restrictions?
+
+- intent: ask_recommendation_drink
+  examples: |
+    - Can you recommend a drink to go with my meal?
+    - What beverages do you suggest pairing with the food?
+    - Any recommendations for drinks?
+    - What's a good drink option here?
+- intent: ask_campus_location
+  examples: |
+    - Where is the campus located?
+    - Can you provide directions to the campus?
+    - What's the address of the university campus?
+    - How do I get to the university campus?
+
+- intent: ask_course_information
+  examples: |
+    - Can you tell me about the Computer Science program?
+    - What courses are offered in the Business Administration department?
+    - Do you have any information on the Psychology major?
+    - Can you provide details about the Engineering courses?
+
+- intent: ask_admissions_process
+  examples: |
+    - How do I apply for admission?
+    - What's the admissions process?
+    - Can you guide me through the application procedure?
+    - What documents are required for admission?
+
+- intent: ask_financial_aid
+  examples: |
+    - Do you offer financial aid or scholarships?
+    - How can I apply for financial assistance?
+    - What are the options for funding my education?
+    - Can you provide information on scholarships available?
+
+- intent: ask_campus_facilities
+  examples: |
+    - What facilities are available on campus?
+    - Are there any libraries on campus?
+    - Do you have sports facilities?
+    - Can you tell me about the student recreation center?
+
+- intent: ask_events
+  examples: |
+    - Are there any upcoming events on campus?
+    - Can I get information about university events?
+    - What events are happening this week?
+    - Is there a calendar of events available?
+
+- intent: ask_student_support_services
+  examples: |
+    - What support services are available for students?
+    - Can you provide information on counseling services?
+    - Do you have tutoring services?
+    - Are there resources for career counseling?
+
+- intent: ask_student_life
+  examples: |
+    - What is student life like at your university?
+    - Can you tell me about student clubs and organizations?
+    - Are there any student-run publications?
+    - Can you provide information on campus traditions?
+- intent: ask_academic_calendar
+  examples: |
+    - Can you provide the academic calendar?
+    - When does the semester start?
+    - Are there any breaks during the academic year?
+    - What are the important dates for registration?
+
+- intent: ask_professor_information
+  examples: |
+    - Can you tell me about Professor Smith?
+    - Who teaches the Introduction to Biology course?
+    - Do you have information on Professor Johnson?
+    - Can you provide details about the faculty members in the Physics department?
+
+- intent: ask_campus_security
+  examples: |
+    - How safe is the campus?
+    - Can you provide information about campus security?
+    - Are there security measures in place on campus?
+    - Can I get details about the campus police department?
+
+- intent: ask_housing_options
+  examples: |
+    - What housing options are available for students?
+    - Can you provide information about on-campus housing?
+    - Do you have recommendations for off-campus housing?
+    - Are there any housing resources for international students?
+
+- intent: ask_student_activities
+  examples: |
+    - What student activities are available on campus?
+    - Can you tell me about clubs and organizations?
+    - Are there any student events happening this month?
+    - How can I get involved in extracurricular activities?
+
+- intent: ask_health_services
+  examples: |
+    - What health services are available for students?
+    - Can I get information about the university health center?
+    - Do you offer mental health counseling services?
+    - Are there resources for students with disabilities?
+
+- intent: ask_graduation_requirements
+  examples: |
+    - What are the graduation requirements?
+    - Can you provide information about degree completion?
+    - How many credits do I need to graduate?
+    - Are there any specific courses required for graduation?

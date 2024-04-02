@@ -1,0 +1,91 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - order_food
+  - ask_price
+  - ask_menu
+  - ask_opening_hours
+  - ask_delivery_options
+  - ask_promotions
+  - ask_recommendation
+  - ask_help
+  - ask_feedback
+  - ask_compliment
+  - ask_complaint
+  - ask_location
+  - ask_contact_info
+  - ask_special_diet
+  - ask_payment_methods
+  - ask_wait_time
+  - ask_about
+  - ask_reservation_status
+  - ask_feedback_policy
+  - ask_delivery_time
+  - ask_allergens
+  - ask_reservation_cancelation
+  - ask_cuisine_origin
+  - ask_working_hours
+  - ask_recommendation_best_seller
+  - ask_reservation_confirmation
+  - ask_delivery_area
+  - ask_payment_security
+  - ask_recommendation_seasonal
+  - ask_order_tracking
+  - ask_waitlist
+  - ask_recommendation_spicy
+  - ask_reservation_modification
+  - ask_dietary_restrictions
+  - ask_recommendation_drink
+  - ask_campus_location
+  - ask_course_information
+  - ask_admissions_process
+  - ask_financial_aid
+  - ask_campus_facilities
+  - ask_events
+  - ask_student_support_services
+  - ask_student_life
+  - ask_academic_calendar
+  - ask_professor_information
+  - ask_campus_security
+  - ask_housing_options
+  - ask_student_activities
+  - ask_health_services
+  - ask_graduation_requirements
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  # Add responses for other intents as needed
+
+slots:
+  dish:
+    type: text
+    mappings:    # Add this line
+    - type: from_entity
+      entity: dish
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
